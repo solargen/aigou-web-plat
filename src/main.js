@@ -16,7 +16,7 @@ import routes from './routes'
 import 'font-awesome/css/font-awesome.min.css'
 
 import axios from 'axios'
-axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5d3e6e377a58cf394f421d07/plat'  //基本的url，项目中使用axios发送的所有请求都会把它作为请求的前缀
+axios.defaults.baseURL = 'http://localhost:1299/services'  //基本的url，项目中使用axios发送的所有请求都会把它作为请求的前缀
 //   /user
 // 将API方法绑定到全局  /plat/login
 Vue.prototype.$http = axios     //js对象的原型   this.$http.post().then((res)=>{})
